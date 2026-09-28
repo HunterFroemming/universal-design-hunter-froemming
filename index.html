@@ -1,35 +1,994 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hunter Froemming – Class Portal</title>
-    <link rel="stylesheet" href="style.css">
+
+    <title>Generative AI</title>
+
+    <style>
+        /* Hide only visually, but have it available for screen readers */
+        .sr-only {
+            border: 0;
+            clip: rect(0, 0, 0, 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            white-space: nowrap;
+            width: 1px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #222;
+        }
+
+        header {
+            border-bottom: 2px solid #222;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            background-color: #eeeeee;
+            padding: 15px;
+            margin-bottom: 30px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+            margin-bottom: 5px;
+        }
+
+        nav a {
+            color: #0645ad;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        figure {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        figure img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        figcaption {
+            font-size: 0.9rem;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        .figure-right {
+            float: right;
+            width: 250px;
+            margin: 0 0 20px 25px;
+        }
+
+        .figure-left {
+            float: left;
+            width: 250px;
+            margin: 0 25px 20px 0;
+        }
+
+        .figure-wide {
+            max-width: 600px;
+            margin: 25px auto;
+        }
+
+        .figure-large {
+            max-width: 800px;
+            margin: 25px auto;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        footer {
+            clear: both;
+            border-top: 2px solid #222;
+            margin-top: 40px;
+            padding-top: 15px;
+        }
+    </style>
 </head>
+
+
 <body>
+
     <header>
-        <h1>Hunter Froemming</h1>
-        <p>Accessible Class Portal – Fall 2026</p>
+        <h1>Generative AI</h1>
+
+        <p>
+            An overview of generative artificial intelligence, its history,
+            applications, technology, and major concerns.
+        </p>
     </header>
 
-    <main>
-        <section aria-labelledby="about-title">
-            <h2 id="about-title">About Me</h2>
-            <p>Hi, I'm Hunter. I'm a Computer Science major at CU Boulder, interested in cybersecurity, linguistics, and building cool projects. This page will serve as the hub for my course assignments.</p>
-        </section>
 
-        <nav aria-labelledby="nav-title">
-            <h2 id="nav-title">Assignments</h2>
-            <ul>
-                <li><a href="#">Assignment 1 (placeholder)</a></li>
-                <li><a href="#">Assignment 2 (placeholder)</a></li>
-                <li><a href="#">Assignment 3 (placeholder)</a></li>
-            </ul>
-        </nav>
+    <nav aria-labelledby="navigation-heading">
+
+        <h2 id="navigation-heading" class="sr-only">
+            Article Navigation
+        </h2>
+
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#applications">Applications</a></li>
+            <li><a href="#software">Software and Hardware</a></li>
+            <li><a href="#ethics">Ethical Concerns</a></li>
+            <li><a href="#detection">Detection and Awareness</a></li>
+        </ul>
+
+    </nav>
+
+
+    <main>
+
+        <article>
+
+            <h2 class="sr-only">Generative AI Article</h2>
+
+
+            <!-- OVERVIEW -->
+
+            <section id="overview">
+
+                <h2>Overview</h2>
+
+                <figure class="figure-right">
+
+                    <img
+                        src="images/Theatre_Dopera_Spatial.png"
+                        alt="AI-generated image of figures standing in a futuristic opera scene">
+
+                    <figcaption>
+                        Théâtre D'opéra Spatial, an image created using Midjourney.
+                    </figcaption>
+
+                </figure>
+
+                <p>
+                    Generative artificial intelligence, also known as generative AI
+                    or GenAI, is a subfield of artificial intelligence that uses
+                    generative models to produce text, images, video, audio,
+                    computer code, and other forms of digital data.
+                </p>
+
+                <p>
+                    Generative models learn patterns and structures found in their
+                    training data and use those patterns to create new data in
+                    response to input. This input often takes the form of
+                    natural-language prompts.
+                </p>
+
+                <p>
+                    The prevalence of generative AI tools increased significantly
+                    during the artificial intelligence boom of the 2020s.
+                    The release of ChatGPT in November 2022 helped introduce
+                    generative AI to a much wider audience.
+                </p>
+
+                <p>
+                    Improvements in deep neural networks, particularly large
+                    language models based on transformer architecture, contributed
+                    to this growth.
+                </p>
+
+                <p>
+                    Popular generative AI applications include conversational
+                    systems such as ChatGPT, Claude, Microsoft Copilot, Google
+                    Gemini, Grok, and other chatbots.
+                </p>
+
+                <p>
+                    Generative AI also includes text-to-image systems such as
+                    DALL-E, Stable Diffusion, Adobe Firefly, and Midjourney,
+                    as well as systems capable of generating video, audio,
+                    and computer code.
+                </p>
+
+                <p>
+                    Companies have used generative AI in software development,
+                    healthcare, finance, entertainment, marketing, writing,
+                    and product design.
+                </p>
+
+                <p>
+                    The technology has also created concerns involving
+                    misinformation, copyright, cybersecurity, employment,
+                    bias, and environmental effects.
+                </p>
+
+                <div class="clear"></div>
+
+            </section>
+
+
+            <!-- HISTORY -->
+
+            <section id="history">
+
+                <h2>History</h2>
+
+
+                <section>
+
+                    <h3>Early History</h3>
+
+                    <p>
+                        The origins of algorithmically generated media can be
+                        traced to the development of the Markov chain.
+                    </p>
+
+                    <p>
+                        Russian mathematician Andrey Markov introduced the
+                        concept in 1906 and used it to analyze patterns of
+                        vowels and consonants in the novel
+                        <em>Eugene Onegin</em>.
+                    </p>
+
+                    <p>
+                        Once trained on a body of text, a Markov chain can
+                        generate probabilistic text. These methods were early
+                        examples of computers producing new material based
+                        on patterns found in existing information.
+                    </p>
+
+                    <p>
+                        By the early 1970s, artists had begun using computers
+                        for other generative techniques. Artist Harold Cohen
+                        developed AARON, a computer program designed to create
+                        paintings autonomously.
+                    </p>
+
+                    <p>
+                        During the 1980s and 1990s, generative planning was
+                        also used in artificial intelligence systems. These
+                        systems generated sequences of actions intended to
+                        reach specific goals.
+                    </p>
+
+                </section>
+
+
+                <section>
+
+                    <h3>Generative Neural Networks</h3>
+
+                    <figure class="figure-right">
+
+                        <img
+                            src="images/Discriminative_vs_Generative_Neural_Networks.png"
+                            alt="Diagram comparing a discriminative neural network with a generative neural network">
+
+                        <figcaption>
+                            A comparison between discriminative and generative
+                            neural networks.
+                        </figcaption>
+
+                    </figure>
+
+                    <p>
+                        During the late 2000s and early 2010s, improvements
+                        in deep learning led to major advances in image
+                        classification, speech recognition, and natural-language
+                        processing.
+                    </p>
+
+                    <p>
+                        Machine learning uses both discriminative models and
+                        generative models. Discriminative systems are generally
+                        trained to distinguish between different types of data,
+                        while generative systems attempt to create new data.
+                    </p>
+
+                    <p>
+                        In 2014, models including variational autoencoders
+                        and generative adversarial networks made more effective
+                        generative modeling of complicated data such as images
+                        possible.
+                    </p>
+
+                    <p>
+                        Another important development occurred in 2017 with
+                        the publication of the paper
+                        <em>Attention Is All You Need</em>.
+                    </p>
+
+                    <p>
+                        The paper introduced transformer architecture, which
+                        became the foundation for many later generative AI
+                        systems.
+                    </p>
+
+                    <p>
+                        Transformer models helped lead to the development
+                        of generative pre-trained transformers, commonly
+                        known as GPT models. GPT-1 was introduced in 2018.
+                    </p>
+
+                    <div class="clear"></div>
+
+                </section>
+
+
+                <section>
+
+                    <h3>Generative AI Adoption</h3>
+
+                    <figure class="figure-left">
+
+                        <img
+                            src="images/Timeline-of-AI-generated-faces.png"
+                            alt="Timeline showing improvements in AI-generated images from 2014 through 2022">
+
+                        <figcaption>
+                            AI-generated images have become much more advanced.
+                        </figcaption>
+
+                    </figure>
+
+                    <p>
+                        During the early 2020s, generative AI systems became
+                        increasingly available to the public.
+                    </p>
+
+                    <p>
+                        In March 2020, the release of 15.ai demonstrated
+                        the ability to generate convincing character voices
+                        from relatively small amounts of training data.
+                    </p>
+
+                    <p>
+                        In 2021, OpenAI's DALL-E attracted widespread
+                        attention to text-to-image generation.
+                    </p>
+
+                    <p>
+                        Other projects, including DALL-E Mini, which was
+                        later renamed Craiyon, made similar systems more
+                        accessible to the public.
+                    </p>
+
+                    <p>
+                        Midjourney and Stable Diffusion were released in
+                        2022, further expanding public access to
+                        AI image generation.
+                    </p>
+
+                    <p>
+                        ChatGPT was released to the public in November 2022.
+                        By 2023, it had helped popularize generative AI for
+                        general-purpose text-based tasks.
+                    </p>
+
+                    <div class="clear"></div>
+
+                </section>
+
+            </section>
+
+
+            <!-- APPLICATIONS -->
+
+            <section id="applications">
+
+                <h2>Applications</h2>
+
+                <p>
+                    Generative artificial intelligence has been applied
+                    across many industries for content creation and automation.
+                </p>
+
+                <p>
+                    In healthcare, generative models can assist with drug
+                    discovery and the creation of synthetic medical data.
+                </p>
+
+                <p>
+                    In finance, they can be used for report drafting,
+                    data generation, and automated customer service.
+                </p>
+
+                <p>
+                    Media and entertainment industries also use generative
+                    systems for music, writing, images, and video.
+                </p>
+
+
+                <section>
+
+                    <h3>Text and Software Code</h3>
+
+                    <p>
+                        Large language models are trained using large
+                        collections of tokenized text.
+                    </p>
+
+                    <p>
+                        They can perform tasks involving natural-language
+                        processing, machine translation, and natural-language
+                        generation.
+                    </p>
+
+                    <p>
+                        Large language models can also be trained using
+                        source code. This allows systems to generate
+                        computer programs or portions of programs in
+                        response to user prompts.
+                    </p>
+
+                    <p>
+                        Some systems combine language models with outside
+                        information using retrieval-augmented generation.
+                    </p>
+
+                </section>
+
+
+                <section>
+
+                    <h3>Audio</h3>
+
+                    <p>
+                        Generative AI can create speech, music, and other
+                        forms of audio.
+                    </p>
+
+                    <p>
+                        DeepMind's WaveNet demonstrated in 2016 that deep
+                        neural networks could directly generate raw audio
+                        waveforms.
+                    </p>
+
+                    <p>
+                        Later systems improved neural text-to-speech
+                        generation.
+                    </p>
+
+                </section>
+
+
+                <section>
+
+                    <h3>Images</h3>
+
+                    <p>
+                        Generative AI can create visual artwork based on
+                        written prompts.
+                    </p>
+
+                    <p>
+                        These systems are commonly trained using collections
+                        of images paired with text descriptions.
+                    </p>
+
+                    <p>
+                        Well-known examples include Stable Diffusion,
+                        DALL-E, and Midjourney.
+                    </p>
+
+                </section>
+
+
+                <section>
+
+                    <h3>Video</h3>
+
+                    <p>
+                        Generative AI can also produce video.
+                    </p>
+
+                    <p>
+                        Text-to-video systems allow users to provide
+                        written descriptions that a model attempts to
+                        convert into moving visual scenes.
+                    </p>
+
+                </section>
+
+
+                <section>
+
+                    <h3>Robotics and 3D Modeling</h3>
+
+                    <p>
+                        Generative models have also been applied to
+                        robotics, including motion planning and robot
+                        control based on previously collected data.
+                    </p>
+
+                    <p>
+                        Similar systems can assist with 3D modeling
+                        by creating three-dimensional assets from text
+                        descriptions or images.
+                    </p>
+
+                </section>
+
+            </section>
+
+
+            <!-- SOFTWARE AND HARDWARE -->
+
+            <section id="software">
+
+                <h2>Software and Hardware</h2>
+
+                <figure class="figure-right">
+
+                    <img
+                        src="images/GenAI_Agent.png"
+                        alt="Diagram showing the architecture of a generative artificial intelligence agent">
+
+                    <figcaption>
+                        Architecture of a generative AI agent.
+                    </figcaption>
+
+                </figure>
+
+                <p>
+                    Generative AI models are used by chatbots, programming
+                    tools, image-generation systems, and video-generation
+                    systems.
+                </p>
+
+                <p>
+                    Generative AI features have also been incorporated
+                    into commercial software including Microsoft Office,
+                    Google Photos, and Adobe products.
+                </p>
+
+                <p>
+                    Some generative AI models are available as open-source
+                    software.
+                </p>
+
+                <p>
+                    Stable Diffusion and several large language models
+                    can be downloaded and run on local hardware.
+                </p>
+
+                <p>
+                    Smaller generative AI models containing several
+                    billion parameters can sometimes run on smartphones,
+                    personal computers, and embedded devices.
+                </p>
+
+                <p>
+                    Larger models may require specialized hardware such
+                    as graphics processing units, commonly known as GPUs.
+                </p>
+
+                <p>
+                    Extremely large models may contain hundreds of
+                    billions of parameters and typically run in data
+                    centers containing large arrays of GPUs or other
+                    AI accelerators.
+                </p>
+
+                <div class="clear"></div>
+
+
+                <section>
+
+                    <h3>Generative Models and Training Techniques</h3>
+
+
+                    <section>
+
+                        <h4>Generative Adversarial Networks</h4>
+
+                        <figure class="figure-right">
+
+                            <img
+                                src="images/GANs_Technique.webp"
+                                alt="Diagram showing the training process for a generative adversarial network">
+
+                            <figcaption>
+                                Workflow for the training of a generative
+                                adversarial network.
+                            </figcaption>
+
+                        </figure>
+
+                        <p>
+                            Generative adversarial networks, or GANs,
+                            consist of two neural networks called the
+                            generator and discriminator.
+                        </p>
+
+                        <p>
+                            The generator creates synthetic data while
+                            the discriminator attempts to determine
+                            whether the generated information is
+                            authentic or artificial.
+                        </p>
+
+                        <p>
+                            The two networks improve by competing
+                            against one another during training.
+                        </p>
+
+                        <div class="clear"></div>
+
+                    </section>
+
+
+                    <section>
+
+                        <h4>Variational Autoencoders</h4>
+
+                        <figure class="figure-wide">
+
+                            <img
+                                src="images/GAN_vs_VAE_(cropped).png"
+                                alt="Side-by-side comparison of images produced by a variational autoencoder and a generative adversarial network">
+
+                            <figcaption>
+                                Comparison between images generated by a VAE
+                                on the left and a GAN on the right.
+                            </figcaption>
+
+                        </figure>
+
+                        <p>
+                            Variational autoencoders, or VAEs, are
+                            deep-learning models that probabilistically
+                            encode data.
+                        </p>
+
+                        <p>
+                            They can be used for tasks such as image
+                            processing, data compression, identifying
+                            unusual patterns, and generating new examples
+                            resembling their training data.
+                        </p>
+
+                    </section>
+
+
+                    <section>
+
+                        <h4>Transformers</h4>
+
+                        <figure class="figure-wide">
+
+                            <img
+                                src="images/Full_GPT_architecture.png"
+                                alt="Diagram showing the architecture and transformer blocks of a GPT model">
+
+                            <figcaption>
+                                The full architecture of a GPT model.
+                            </figcaption>
+
+                        </figure>
+
+                        <p>
+                            Transformers use an attention mechanism that
+                            allows a model to determine the relative
+                            importance of different tokens in a sequence.
+                        </p>
+
+                        <p>
+                            Unlike recurrent neural networks, transformers
+                            can process multiple tokens in parallel.
+                            This improves training efficiency and scalability.
+                        </p>
+
+                        <p>
+                            Transformer architecture became the basis for
+                            many modern large language models and the
+                            GPT series.
+                        </p>
+
+                    </section>
+
+                </section>
+
+            </section>
+
+
+            <!-- ETHICAL CONCERNS -->
+
+            <section id="ethics">
+
+                <h2>Ethical Concerns</h2>
+
+                <p>
+                    The development of generative AI has created concerns
+                    among governments, companies, researchers, artists,
+                    and members of the public.
+                </p>
+
+                <p>
+                    Major concerns include misinformation, copyright,
+                    academic honesty, employment, bias, privacy, and
+                    environmental effects.
+                </p>
+
+
+                <section>
+
+                    <h3>Academic Honesty</h3>
+
+                    <p>
+                        Generative AI can create and modify academic
+                        writing, paraphrase sources, translate languages,
+                        and answer questions.
+                    </p>
+
+                    <p>
+                        Its use in education has challenged traditional
+                        definitions of plagiarism and academic dishonesty.
+                    </p>
+
+                    <p>
+                        Schools and universities have attempted to develop
+                        policies defining when artificial intelligence
+                        tools may or may not be used.
+                    </p>
+
+                </section>
+
+
+                <section>
+
+                    <h3>Effects on Employment</h3>
+
+                    <figure class="figure-right">
+
+                        <img
+                            src="images/AI_Protest_Sign_2023_WGA_Strike.jpg"
+                            alt="Writer holding a Writers Guild strike sign criticizing the use of artificial intelligence">
+
+                        <figcaption>
+                            A picketer during the 2023 Writers Guild
+                            of America strike.
+                        </figcaption>
+
+                    </figure>
+
+                    <p>
+                        The ability of generative AI to automate certain
+                        creative and technical tasks has led to concerns
+                        about employment.
+                    </p>
+
+                    <p>
+                        Artists, illustrators, writers, actors, and
+                        voice actors have expressed concerns that
+                        generated material could replace some forms
+                        of human work.
+                    </p>
+
+                    <p>
+                        Generative AI became one of the issues discussed
+                        during Hollywood labor disputes in 2023,
+                        including the Writers Guild of America and
+                        SAG-AFTRA strikes.
+                    </p>
+
+                    <div class="clear"></div>
+
+                </section>
+
+
+                <section>
+
+                    <h3>Bias</h3>
+
+                    <p>
+                        Generative AI systems can reproduce patterns
+                        and biases contained in their training data.
+                    </p>
+
+                    <p>
+                        For example, language models may associate
+                        particular professions with particular genders
+                        when those patterns appear frequently in their
+                        training information.
+                    </p>
+
+                    <p>
+                        Voice-recognition systems can also have difficulty
+                        understanding certain accents, speech patterns,
+                        and speech disabilities when those voices are not
+                        adequately represented in training data.
+                    </p>
+
+                </section>
+
+
+                <section>
+
+                    <h3>Misinformation and Deepfakes</h3>
+
+                    <p>
+                        Generative AI can produce realistic images,
+                        audio, video, and text that may be difficult
+                        to distinguish from authentic material.
+                    </p>
+
+                    <p>
+                        Deepfakes use artificial neural networks to
+                        create or alter media, sometimes replacing one
+                        person's likeness or voice with another.
+                    </p>
+
+                    <p>
+                        Deepfake technology has raised concerns because
+                        it can be used for fraud, misinformation,
+                        impersonation, fake news, and other deceptive
+                        purposes.
+                    </p>
+
+                </section>
+
+
+                <section>
+
+                    <h3>Accuracy and Content Quality</h3>
+
+                    <p>
+                        Generative AI systems can create incorrect
+                        information that sounds convincing.
+                    </p>
+
+                    <p>
+                        Incorrect generated information is commonly
+                        described as an AI hallucination.
+                    </p>
+
+                    <p>
+                        Researchers have also raised concerns about
+                        increasing amounts of low-quality AI-generated
+                        material appearing on websites, social media,
+                        and other digital services.
+                    </p>
+
+                    <p>
+                        Repeatedly training new artificial intelligence
+                        systems on generated information can also
+                        decrease model quality, a process sometimes
+                        called model collapse.
+                    </p>
+
+                </section>
+
+
+                <section>
+
+                    <h3>Environmental Impact</h3>
+
+                    <figure class="figure-large">
+
+                        <img
+                            src="images/Energy_consumption_per_ChatGPT_query_compared_to_everyday_electricity_use.png"
+                            alt="Bar chart comparing the estimated energy use of different ChatGPT queries with common household electricity use">
+
+                        <figcaption>
+                            Estimated energy consumption of ChatGPT queries
+                            compared with examples of everyday electricity use.
+                        </figcaption>
+
+                    </figure>
+
+                    <p>
+                        Generative AI systems require energy for both
+                        training and everyday use.
+                    </p>
+
+                    <p>
+                        Large systems are normally operated in data
+                        centers containing specialized computer hardware.
+                    </p>
+
+                    <p>
+                        Environmental concerns include electricity
+                        consumption, carbon emissions, water use for
+                        cooling data centers, and electronic waste.
+                    </p>
+
+                    <p>
+                        Proposed solutions include improving data-center
+                        efficiency, developing more efficient
+                        machine-learning models, reducing unnecessary
+                        retraining, and increasing transparency about
+                        energy and water consumption.
+                    </p>
+
+                </section>
+
+            </section>
+
+
+            <!-- DETECTION -->
+
+            <section id="detection">
+
+                <h2>Detection and Awareness</h2>
+
+                <p>
+                    Several tools have been developed in an attempt
+                    to identify material created using artificial
+                    intelligence.
+                </p>
+
+                <p>
+                    AI detection systems such as GPTZero attempt
+                    to identify generated writing.
+                </p>
+
+                <p>
+                    However, these tools can produce false positives
+                    and may incorrectly identify human-written
+                    material as AI-generated.
+                </p>
+
+                <p>
+                    Digital watermarking is another proposed method.
+                    A watermark places subtle information into generated
+                    content so that compatible software can later
+                    identify it.
+                </p>
+
+                <p>
+                    Developers have also created systems designed
+                    to watermark generated images, text, and video.
+                </p>
+
+                <p>
+                    Because generative AI systems continue to improve,
+                    accurately distinguishing human-created and
+                    AI-generated material remains an ongoing challenge.
+                </p>
+
+            </section>
+
+        </article>
+
     </main>
 
+
     <footer>
-        <p>© 2026 Hunter Froemming</p>
+
+        <p>
+            Content adapted from the Wikipedia article
+            <cite>Generative AI</cite>.
+        </p>
+
+        <p>
+            Original article:
+            <a href="https://en.wikipedia.org/wiki/Generative_AI">
+                Generative AI on Wikipedia
+            </a>
+        </p>
+
     </footer>
+
 </body>
+
 </html>
