@@ -1,0 +1,143 @@
+/* Adobe-style blue/green color palette */
+
+:root {
+    --dark: #023047;
+    --primary: #219ebc;
+    --light: #8ecae6;
+    --accent: #ffb703;
+    --background: #f8f9fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+.container {
+    min-height: 100vh;
+
+    display: grid;
+    gap: 10px;
+
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "left main right"
+        "footer footer footer";
+
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+header {
+    grid-area: header;
+    background-color: var(--dark);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: var(--primary);
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1rem 1.5rem;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var(--dark);
+}
+
+main {
+    grid-area: main;
+    background: white;
+    padding: 1.5rem;
+}
+
+.left {
+    grid-area: left;
+    background: var(--light);
+    padding: 1rem;
+}
+
+.right {
+    grid-area: right;
+    background: var(--light);
+    padding: 1rem;
+}
+
+footer {
+    grid-area: footer;
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Tablet */
+
+@media screen and (max-width: 900px) {
+
+    .container {
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "main main"
+            "left right"
+            "footer footer";
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/* Mobile */
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "left"
+            "right"
+            "footer";
+
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 1.25rem;
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+
+}
